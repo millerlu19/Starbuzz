@@ -6,5 +6,5 @@
         <item>Food</item>
         <item>Stores</item>
     </string-array>
-    <string name="title_activity_drink_category">Drink Category</string>
+    <string name="title_activity_drink_category">Drink Categories</string>
 </resources>
