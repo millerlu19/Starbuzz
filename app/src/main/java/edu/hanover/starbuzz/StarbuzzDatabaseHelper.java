@@ -4,9 +4,14 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-class StarbuzzDatabaseHelper {
+class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
 
-    StarbuzzDatabaseHelper(Context context) {}
+    private static final String DB_NAME = "starbuzz";
+    private static final int DB_VERSION = 1;
+
+    StarbuzzDatabaseHelper(Context context) {
+        super(context, DB_NAME, null, DB_VERSION);
+    }
 
     @Override
     public void onCreate(SQLiteDatabase db) {}
